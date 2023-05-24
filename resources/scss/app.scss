@@ -9,3 +9,29 @@ $fa-font-path: "../fonts/webfonts" !default;
 @import "~@fortawesome/fontawesome-free/scss/brands";
 
 @import '~bootstrap/scss/bootstrap';
+
+
+
+:root {
+    --bg-qrcode: #3685fe;
+    --color-card: #ffffff;
+    --text-card: #0d1a2a;
+    --p-card: #919799;
+    --bg-card: #d5e1ef;
+}
+
+body {
+    background-color: var(--bg-card);
+}
+
+
+.card {
+    box-shadow: 20px 20px 20px var(--p-card);
+}
+
+
+.card img {
+    width: 35%;
+    border-radius: 30px;
+    padding: 10px;
+}
