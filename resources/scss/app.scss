@@ -22,8 +22,12 @@ $fa-font-path: "../fonts/webfonts" !default;
 
 body {
     background-color: var(--bg-card);
+
 }
 
+.body {
+    border: 3px solid rgb(139, 133, 133);
+}
 
 .card {
     box-shadow: 20px 20px 20px var(--p-card);

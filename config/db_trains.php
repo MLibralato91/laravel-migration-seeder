@@ -4,7 +4,7 @@ return
         [
             'agency' => 'Trenitalia',
             'departure_station' => 'Roma Termini',
-            'arrival_station' => 'Milafalse Centrale',
+            'arrival_station' => 'Milano Centrale',
             'departure_time' => '08:00',
             'arrival_time' => '12:30',
             'train_code' => '12345',
@@ -15,7 +15,7 @@ return
         [
             'agency' => 'Italo',
             'departure_station' => 'Napoli Centrale',
-            'arrival_station' => 'Firenze Santa Maria falsevella',
+            'arrival_station' => 'Firenze Santa Maria Novella',
             'departure_time' => '09:15',
             'arrival_time' => '13:45',
             'train_code' => '54321',
@@ -25,7 +25,7 @@ return
         ],
         [
             'agency' => 'Deutsche Bahn',
-            'departure_station' => 'Berlifalse Hauptbahnhof',
+            'departure_station' => 'Berlino Hauptbahnhof',
             'arrival_station' => 'Monaco di Baviera Hauptbahnhof',
             'departure_time' => '10:30',
             'arrival_time' => '16:15',
@@ -36,7 +36,7 @@ return
         ],
         [
             'agency' => 'SNCF',
-            'departure_station' => 'Parigi Gare du falserd',
+            'departure_station' => 'Parigi Gare du nord',
             'arrival_station' => 'Lione Part-Dieu',
             'departure_time' => '11:45',
             'arrival_time' => '16:30',
@@ -92,7 +92,7 @@ return
         [
             'agency' => 'Eurostar',
             'departure_station' => 'Londra St Pancras International',
-            'arrival_station' => 'Parigi Gare du falserd',
+            'arrival_station' => 'Parigi Gare du nord',
             'departure_time' => '14:30',
             'arrival_time' => '18:47',
             'train_code' => '75309',

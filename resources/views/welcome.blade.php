@@ -15,14 +15,14 @@
                                 </div>
 
                             </div>
-                            <div class="body ps-2">
-                                <h5>{{ $train->agency }}</h5>
-                                <p>Da:{{ $train->departure_station }}</p>
-                                <p>A:{{ $train->arrival_station }}</p>
+                            <div class="body ps-2 text-bg-light rounded-2">
+                                <h3 class="text-primary">{{ $train->agency }}</h3>
+                                <p>Da: <span class="fw-bolder">{{ $train->departure_station }}</span></p>
+                                <p>A: <span class="fw-bolder">{{ $train->arrival_station }}</span></p>
 
                                 <div>
-                                    <h4>Partenza prevista: {{ substr($train->departure_time, 0, 5) }}</h4>
-                                    <h4>Arrivo previsto: {{ substr($train->arrival_time, 0, 5) }}</h4>
+                                    <h5>Partenza prevista: {{ substr($train->departure_time, 0, 5) }}</h5>
+                                    <h5>Arrivo previsto: {{ substr($train->arrival_time, 0, 5) }}</h5>
                                 </div>
 
                                 @if ($train->in_time)
