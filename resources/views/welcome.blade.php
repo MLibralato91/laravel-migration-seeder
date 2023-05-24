@@ -2,7 +2,7 @@
 @section('mainContent')
     <main>
         <div class="container">
-            <h1>Trains</h1>
+            <h1 class="py-5">I tuoi biglietti</h1>
             <div class="row">
                 @foreach ($trains as $train)
                     <div class="col-4 pb-5">
@@ -15,15 +15,28 @@
                                 </div>
 
                             </div>
-                            <h5>{{ $train->agency }}</h5>
-                            <p>Da:{{ $train->departure_station }}</p>
-                            <p>A:{{ $train->arrival_station }}</p>
+                            <div class="body ps-2">
+                                <h5>{{ $train->agency }}</h5>
+                                <p>Da:{{ $train->departure_station }}</p>
+                                <p>A:{{ $train->arrival_station }}</p>
 
-                            <div>
-                                <h4>Partenza prevista:{{ $train->arrival_time }}</h4>
-                                <h4>Arrivo previsto: {{ $train->departure_time }}</h4>
+                                <div>
+                                    <h4>Partenza prevista: {{ substr($train->departure_time, 0, 5) }}</h4>
+                                    <h4>Arrivo previsto: {{ substr($train->arrival_time, 0, 5) }}</h4>
+                                </div>
+
+                                @if ($train->in_time)
+                                    <p class="text-success fw-bolder">In orario</p>
+                                @else
+                                    <p class="text-warning fw-bolder">In ritardo</p>
+                                @endif
+                                @if ($train->deleted)
+                                    <p class="text-danger fw-bolder">Cancellato</p>
+                                @endif
                             </div>
+
                         </div>
+
                     </div>
                 @endforeach
             </div>
